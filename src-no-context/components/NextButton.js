@@ -1,7 +1,4 @@
-import { useQuiz } from "../context/QuizContext";
-
-function NextButton() {
-  const { dispatch, answer, index, numQuestions } = useQuiz();
+function NextButton({ dispatch, answer, index, numQuestions }) {
   // If user doesn't have answer, this component will not display
   if (answer === null) return null;
 
